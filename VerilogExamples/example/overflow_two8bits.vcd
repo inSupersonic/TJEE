@@ -1,0 +1,65 @@
+$date
+	Fri Mar 28 11:21:41 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module overflow_two8bits_tb $end
+$var wire 8 ! s [7:0] $end
+$var wire 1 " overflow $end
+$var reg 8 # a [7:0] $end
+$var reg 8 $ b [7:0] $end
+$scope module uut $end
+$var wire 8 % a [7:0] $end
+$var wire 8 & b [7:0] $end
+$var wire 1 " overflow $end
+$var wire 8 ' s [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+0"
+b0 !
+$end
+#10
+1"
+b1111111 #
+b1111111 %
+b10000000 !
+b10000000 '
+b1 $
+b1 &
+#20
+b10000000 #
+b10000000 %
+b1111111 !
+b1111111 '
+b11111111 $
+b11111111 &
+#30
+b1111111 #
+b1111111 %
+b11111110 !
+b11111110 '
+b1111111 $
+b1111111 &
+#40
+b10000000 #
+b10000000 %
+b0 !
+b0 '
+b10000000 $
+b10000000 &
+#50

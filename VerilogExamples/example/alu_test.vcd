@@ -1,0 +1,173 @@
+$date
+	Sun Apr 13 22:05:13 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module alu_tb $end
+$var wire 8 ! result [7:0] $end
+$var wire 1 " cout $end
+$var reg 1 # cin $end
+$var reg 1 $ clk $end
+$var reg 8 % opb [7:0] $end
+$var reg 4 & opcode [3:0] $end
+$var reg 1 ' reset $end
+$scope module uut $end
+$var wire 1 # cin $end
+$var wire 1 $ clk $end
+$var wire 8 ( opb [7:0] $end
+$var wire 4 ) opcode [3:0] $end
+$var wire 1 ' reset $end
+$var wire 8 * result [7:0] $end
+$var wire 1 " cout $end
+$var wire 8 + alu_result [7:0] $end
+$var reg 8 , acc [7:0] $end
+$scope module u_alu $end
+$var wire 1 # cin $end
+$var wire 8 - opa [7:0] $end
+$var wire 8 . opb [7:0] $end
+$var wire 4 / opcode [3:0] $end
+$var reg 1 " cout $end
+$var reg 8 0 result [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+1'
+b0 &
+b0 %
+0$
+0#
+0"
+b0 !
+$end
+#5000
+1$
+#10000
+0$
+#15000
+1$
+#20000
+0$
+0'
+#25000
+b100011 !
+b100011 *
+b100011 +
+b100011 0
+b100011 %
+b100011 (
+b100011 .
+1$
+#30000
+0$
+#35000
+b1000110 !
+b1000110 *
+b1000110 +
+b1000110 0
+b100011 ,
+b100011 -
+1$
+#36000
+b101000 !
+b101000 *
+b101000 +
+b101000 0
+b101 %
+b101 (
+b101 .
+#40000
+0$
+#45000
+b101101 !
+b101101 *
+b101101 +
+b101101 0
+b101000 ,
+b101000 -
+1$
+#46000
+b0 !
+b0 *
+b0 +
+b0 0
+b1010110 %
+b1010110 (
+b1010110 .
+b11 &
+b11 )
+b11 /
+#50000
+0$
+#55000
+b0 ,
+b0 -
+1$
+#56000
+b110 &
+b110 )
+b110 /
+#60000
+0$
+#65000
+1$
+#66000
+b10100000 !
+b10100000 *
+b10100000 +
+b10100000 0
+b10100000 %
+b10100000 (
+b10100000 .
+b0 &
+b0 )
+b0 /
+#70000
+0$
+#75000
+1"
+b1000000 !
+b1000000 *
+b1000000 +
+b1000000 0
+b10100000 ,
+b10100000 -
+1$
+#76000
+1"
+b0 !
+b0 *
+b0 +
+b0 0
+b1010000 %
+b1010000 (
+b1010000 .
+b1001 &
+b1001 )
+b1001 /
+#80000
+0$
+#85000
+0"
+b0 ,
+b0 -
+1$
+#86000
