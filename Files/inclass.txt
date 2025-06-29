@@ -1,0 +1,14 @@
+Sketch the state transition diagram for the FSM described by the following HDL code. An FSM of this nature is used in a branch predictor on some microprocessors.
+请绘制以下 HDL 代码描述的 FSM 的状态转换图。此类 FSM 在某些微处理器的分支预测器中使用。
+
+Alyssa P. Hacker’s snail has a daughter with a Mealy machine FSM brain. The daughter snail smiles whenever she slides over the pattern 1101 or the pattern 1110. Sketch the state transition diagram for this happy snail using as few states as possible. Write Verilog code(including testbench) for this FSM, run simulation to verify you design.
+Alyssa P. Hacker 的蜗牛有一个女儿，她的大脑是一个 Mealy 机的有限状态机 (FSM)。女儿蜗牛每次滑过图案 1101 或 1110 时都会微笑。用尽可能少的状态绘制这只快乐蜗牛的状态转换图。为这个有限状态机编写 Verilog 代码（包括测试平台），并运行仿真来验证你的设计。
+
+有限状态机-3
+(1). 格雷码有一个有用的特性，即连续的数字仅在一位位置上有所不同。下表列出了一个3位格雷码，分别表示0到7的数字。设计一个3位模8格雷码计数器有限状态机，该计数器没有数据输入，但有三个输出。（模N计数器从0计数到N-1，然后重复计数。例如，手表使用模60计数器来记录从0到59的分和秒。）复位时，输出应为000。在每个时钟沿，输出应前进到下一个格雷码。达到100后，应重复000。绘制该有限状态机的状态转换图。
+（2）. 通过添加一个 UP 输入，将模 8 格雷码计数器扩展为一个 UP/DOWN 计数器。如果 UP = 1，计数器前进到下一个数字。如果 UP = 0，计数器后退到上一个数字。为此 FSM 编写 Verilog 代码和测试平台，并进行编译和仿真。
+
+4. 时序
+现场可编程门阵列 (FPGA) 使用可配置逻辑块 (CLB) 而不是逻辑门来实现组合逻辑。Xilinx Spartan 3 FPGA 的每个 CLB 的传播延迟和污染延迟分别为 0.61 ns 和 0.30 ns。它还包含触发器，其传播延迟和污染延迟分别为 0.72 ns 和 0.50 ns，建立时间和保持时间分别为 0.53 ns 和 0 ns。
+(a) 如果您正在构建一个需要以 40 MHz 运行的系统，那么在两个触发器之间可以使用多少个连续的 CLB？假设 CLB 之间没有时钟偏移，也没有线路延迟。
+(b) 假设触发器之间的所有路径都至少经过一个 CLB。在不违反保持时间的情况下，FPGA 可以承受多少时钟偏移？
