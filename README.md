@@ -8,9 +8,11 @@
       ├── VerilogExamples -- exercises of Verilog
       ├── Sequential Circuits -- basic modules and FSM
       ├── SingleCycle CPU -- RISC-V rv32i
+      ├── PipelinedDesign -- Five Stages Pipelined CPU
       ├── ppts -- Lecture 1-13
       ├── Files -- Weekly homework files
       ├── FPGAexp -- Experiment Courses
+      ├── test.s -- Assembly Machine Codes for CPU Test
       ├── solutions.pdf
       ├── DDCArv_solutions_odd.pdf
       └── README.md
